@@ -21,14 +21,17 @@ const Contact = () => {
     setIsLoading(true); // Start loader
 
     try {
-      await axios.post("http://localhost:5000/send-email", formData);
+      await axios.post(
+        `${process.env.REACT_APP_MAIL_BACKEND}/send-email`,
+        formData
+      );
       alert("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error(error);
       alert("Failed to send message");
     } finally {
-      setIsLoading(false); // Stop loader
+      setIsLoading(false);
     }
   };
 
