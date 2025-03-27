@@ -1,0 +1,104 @@
+{
+  "basic_information": {
+    "name": "Vipul",
+    "email": "vipulkumar2426@gmail.com",
+    "phone": "+91 9525180705",
+    "github": "https://github.com/vipul6042",
+    "linkedin": "https://www.linkedin.com/in/vipul-471667251/"
+  },
+  "skills": {
+    "technologies_and_frameworks": [
+      "ReactJS",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "MongoDB",
+      "Tailwind CSS",
+      "Git/GitHub"
+    ],
+    "programming_languages": ["C", "C++", "Java", "JavaScript", "Python"],
+    "areas_of_interest": [
+      "Data Structures and Algorithms (DSA)",
+      "Competitive Programming",
+      "App/Web Development"
+    ]
+  },
+  "education": [
+    {
+      "institution": "Indian Institute of Technology (BHU), Varanasi",
+      "degree": "Mining Engineering",
+      "cgpa": "7.53",
+      "duration": "Oct 2022 – Present"
+    },
+    {
+      "institution": "Kendriya Vidyalaya No-1, Dhanbad (CBSE)",
+      "class_xii": "90.8% (2022)",
+      "class_x": "88.6% (2020)"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Spardha '23 Website",
+      "description": [
+        "Revamped user experience by designing a modular, reusable component architecture in React, improving development efficiency by 35%.",
+        "Streamlined navigation and state management using React Router, reducing page load times by 40%."
+      ],
+      "technologies_used": ["React", "JavaScript", "CSS", "Python"],
+      "github_link": "https://github.com/IIT-BHU-SPORTS-FEST/spardha-24"
+    },
+    {
+      "name": "S&T/R&D Project Monitoring System",
+      "description": [
+        "Developed a web-based app for monitoring financial and physical progress of coal sector projects, enabling real-time updates for over 50 projects.",
+        "Enhanced security by implementing Two-Factor Authentication (2FA) with Speakeasy, reducing unauthorized access by 50%.",
+        "Established seamless communication via Web Sockets, supporting up to 100 concurrent users during peak activity."
+      ],
+      "technologies_used": [
+        "React",
+        "CSS",
+        "JavaScript",
+        "PostgreSQL",
+        "Web Sockets",
+        "Speakeasy"
+      ],
+      "github_link": "https://github.com/orgs/HackNexus-Smart-India-Hackathon/repositories"
+    },
+    {
+      "name": "Jagriti '24 Website",
+      "description": [
+        "Improved API response times by 25% through backend optimization with MongoDB and Express.js, ensuring 99.9% uptime during high-traffic periods.",
+        "Designed responsive interfaces with React.js and Tailwind CSS, resulting in a 40% increase in user engagement.",
+        "Successfully handled 1,000+ daily visitors post-launch with zero reported bugs in the first week."
+      ],
+      "technologies_used": ["React", "Express", "MongoDB", "Tailwind CSS"],
+      "github_link": "https://github.com/Jagriti-SSC/JagritiWebsite-New"
+    }
+  ],
+  "positions_of_responsibility": [
+    {
+      "title": "Technical Head, Spardha'24, IIT(BHU)",
+      "duration": "Sept 2024 – Present",
+      "responsibilities": [
+        "Leading a team of developers to innovate and manage the technical infrastructure for Spardha’24.",
+        "Fostering collaboration and driving efficiency."
+      ]
+    },
+    {
+      "title": "Tech Executive, Jagriti, 2024",
+      "duration": "March 2023",
+      "responsibilities": [
+        "Collaborated on the design and deployment of the official website for Jagriti’24.",
+        "Delivered a seamless user experience."
+      ]
+    },
+    {
+      "title": "Tech Manager, Sports Council, IIT(BHU)",
+      "duration": "Jan 2024 – March 2024",
+      "responsibilities": [
+        "Played a key role in designing and developing the Sports Council's official website.",
+        "Improved event management capabilities."
+      ]
+    }
+  ]
+}
