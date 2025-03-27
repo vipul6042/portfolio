@@ -2,8 +2,21 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen p-10 bg-gray-900 text-white" id="home">
-      <div className="max-w-lg">
+    <div
+      className="flex flex-col md:flex-row items-center justify-center min-h-screen p-10 bg-gray-900 text-white"
+      id="home"
+    >
+      {/* Profile Image (First on Mobile) */}
+      <div className="mb-8 md:mb-0 md:mr-10">
+        <img
+          src="/profile.jpg"
+          alt="Vipul"
+          className="w-60 h-60 md:w-80 md:h-80 object-cover rounded-full shadow-lg"
+        />
+      </div>
+
+      {/* Intro Section */}
+      <div className="max-w-lg text-center md:text-left">
         <h2 className="text-4xl font-bold">
           HI, I'M <span className="text-green-400">Vipul!</span>
         </h2>
@@ -23,18 +36,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
-
-      <div className="ml-10">
-        <img
-          src="/profile.jpg"
-          alt="Vipul"
-          className="w-80 h-80 object-cover rounded-full shadow-lg"
-        />
-      </div>
     </div>
   );
 };
-
-
 
 export default Hero;

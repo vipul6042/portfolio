@@ -1,38 +1,106 @@
 import React from "react";
+import {
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaJava,
+  FaPython,
+  FaJs,
+  FaCuttlefish,
+} from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiExpress,
+  SiPostgresql,
+  SiMongodb,
+  SiTailwindcss,
+  SiCplusplus,
+} from "react-icons/si";
 
 const Skills = () => {
   const skills = [
-    "ReactJS",
-    "NextJS",
-    "Node.js",
-    "Express",
-    "PostgreSQL",
-    "MongoDB",
-    "Tailwind CSS",
-    "Git/GitHub",
-    "Data Structures and Algorithms",
-    "Competitive Programming",
-    "App/Web Development",
-    "C",
-    "C++",
-    "Java",
-    "JavaScript",
-    "Python",
+    {
+      category: "Frontend",
+      items: [
+        { name: "ReactJS", icon: <FaReact className="text-blue-400" /> },
+        { name: "NextJS", icon: <SiNextdotjs className="text-white" /> },
+        {
+          name: "Tailwind CSS",
+          icon: <SiTailwindcss className="text-teal-400" />,
+        },
+      ],
+    },
+    {
+      category: "Backend",
+      items: [
+        { name: "Node.js", icon: <FaNodeJs className="text-green-400" /> },
+        { name: "Express", icon: <SiExpress className="text-gray-400" /> },
+      ],
+    },
+    {
+      category: "Databases",
+      items: [
+        {
+          name: "PostgreSQL",
+          icon: <SiPostgresql className="text-blue-500" />,
+        },
+        { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+      ],
+    },
+    {
+      category: "Version Control",
+      items: [
+        { name: "Git/GitHub", icon: <FaGitAlt className="text-orange-500" /> },
+      ],
+    },
+    {
+      category: "Programming Languages",
+      items: [
+        { name: "C", icon: <FaCuttlefish className="text-blue-500" /> },
+        { name: "C++", icon: <SiCplusplus className="text-purple-400" /> },
+        { name: "Java", icon: <FaJava className="text-red-500" /> },
+        { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
+        { name: "Python", icon: <FaPython className="text-blue-400" /> },
+      ],
+    },
+    {
+      category: "Other Skills",
+      items: [
+        { name: "Data Structures and Algorithms", icon: "⚙️" },
+        { name: "Competitive Programming", icon: "🏅" },
+        { name: "App/Web Development", icon: "💻" },
+      ],
+    },
   ];
 
   return (
     <div
-      className="bg-gray-800 rounded-lg mx-8 text-white p-8  shadow-lg text-center"
+      className="bg-gray-800 pt-24 rounded-lg mx-8 text-white p-8 shadow-lg"
       id="skills"
     >
-      <h2 className="text-3xl font-bold mb-4">Skills</h2>
-      <div className="flex flex-wrap gap-4">
-        {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="px-4 py-2 bg-green-100 text-green-950 rounded-lg"
-          >
-            {skill}
+      <h2 className="text-4xl font-bold mb-6 text-center">Skills</h2>
+
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {skills.map((group, index) => (
+          <div key={index} className="bg-gray-700 rounded-lg p-6 shadow-md">
+            <h3 className="text-2xl font-semibold mb-4 text-green-400">
+              {group.category}
+            </h3>
+            <div className="flex flex-wrap gap-4">
+              {group.items.map((skill, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-center gap-2 px-4 py-2 bg-green-100 text-green-950 rounded-lg shadow-sm"
+                >
+                  {typeof skill.icon === "string" ? (
+                    <span className="text-xl">{skill.icon}</span>
+                  ) : (
+                    skill.icon
+                  )}
+                  <span>{skill.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div>
